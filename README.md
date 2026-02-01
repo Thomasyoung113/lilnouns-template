@@ -18,3 +18,33 @@ pnpm turbo dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 🎨 Customization Guide
+
+### Theme Configuration
+```javascript
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        'noun-yellow': '#FFC110',
+        'noun-warm': '#E1D7D5',
+        'noun-cool': '#D5D7E1',
+      }
+    }
+  }
+}
+```
+
+### Adding Custom Components
+1. Create component in `components/` directory
+2. Follow naming convention: `ComponentName.tsx`
+3. Export from `components/index.ts`
+4. Use Tailwind for styling consistency
+
+### Deployment Checklist
+- [ ] Update metadata in `app/layout.tsx`
+- [ ] Configure environment variables
+- [ ] Set up analytics (optional)
+- [ ] Test on testnet first
